@@ -87,6 +87,13 @@ body{
     transition: background-color all 1s;
 }
 
+.color-picker{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15%;
+}
+
 .card{
     display: flex;
     background-color: #fff;
@@ -97,7 +104,22 @@ body{
     justify-content: center;
     align-items: center;
     width: 300px;
-    margin-left: 50%;
+}
+
+.colorCalc{
+margin-top: 50px;
+}
+
+.card-2{
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 30px 30px -15px #00000033;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
 }
 
 p{
@@ -142,6 +164,19 @@ ul li:hover{
     background: radial-gradient(circle, rgba(151,195,34,1) 0%, rgba(129,192,38,1) 37%, rgba(253,187,45,1) 100%);
 }
 
+#pink{
+    background-color: #ebd7d7;
+}
+
+#grey{
+    background-color: #616362;
+}
+
+#black{
+    background-color: black;
+}
+
+
 /*Fondo seleccionado*/
 
 .red{
@@ -162,4 +197,39 @@ ul li:hover{
     background: rgb(151,195,34);
     background: radial-gradient(circle, rgba(151,195,34,1) 0%, rgba(129,192,38,1) 37%, rgba(253,187,45,1) 100%);
     color: black;
+}
+
+/*color calc seleccionado*/
+
+.pink{
+    background-color: #ebd7d7 ;
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: 160px repeat(5 , 75px);
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+    color: #fff;
+}
+
+.black{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: 160px repeat(5 , 75px);
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+    color: #fff;
+}
+
+.grey{
+    background-color: #616362;
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: 160px repeat(5 , 75px);
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+    color: #fff;
 }
