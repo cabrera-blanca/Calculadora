@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    font-family: fredoka one;
+}
+
+
+
+
+/*CALCULADORA*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    
+    
+}
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: 160px repeat(5 , 75px);
+    background-color: #5c6462;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+    color: #fff;
+}
+
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border:none;
+    color: #fff;
+    background-color: #8c9e9a;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #4047461f;
+}
+
+button:active{
+    background-color: #242c2a80;
+}
+
+button:focus{
+    outline: none;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+.display{
+    grid-column: 1/-1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #363636;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow:0px 0px 0px 10px #8d8c8854;
+}
+
+#valor-actual{
+    font-size: 1.5em;
+
+}
+
+#valor-anterior{
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+/*COLOR PICKER*/
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: background-color all 1s;
+}
+
+.card{
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 30px 30px -15px #00000033;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-left: 50%;
+}
+
+p{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+ul{
+    list-style: none;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+ul li {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+ul li:hover{
+    transform: scale(1.1);
+}
+
+#red{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 48%, rgba(252,176,69,1) 100%);
+}
+
+#blue{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 4%, rgba(9,81,121,1) 53%, rgba(0,212,255,1) 100%);
+}
+
+#yellow{
+    background: rgb(151,195,34);
+    background: radial-gradient(circle, rgba(151,195,34,1) 0%, rgba(129,192,38,1) 37%, rgba(253,187,45,1) 100%);
+}
+
+/*Fondo seleccionado*/
+
+.red{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 48%, rgba(252,176,69,1) 100%);
+    color: black;
+}
+
+    
+.blue{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 4%, rgba(9,81,121,1) 53%, rgba(0,212,255,1) 100%);
+    color: black;
+}
+
+
+.yellow{
+    background: rgb(151,195,34);
+    background: radial-gradient(circle, rgba(151,195,34,1) 0%, rgba(129,192,38,1) 37%, rgba(253,187,45,1) 100%);
+    color: black;
+}

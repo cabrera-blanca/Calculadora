@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredoka+One&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <!---->    
+    <!--CSS-->
+    <link rel="stylesheet" href="/main.css">
+    <title>Calculadora</title>
+</head>
+<body >
+    <!--COLOR PICKER-->
+    <div class="color-picker">
+        <div class="card">
+            <p>
+                Pick a Background Color
+            </p>
+            <ul>
+                <li class="color-item" id="red"></li>
+                <li class="color-item" id="blue"></li>
+                <li class="color-item" id="yellow"></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--CALCULADORA-->
+    <div class="container">
+        <div class="calculadora">
+            <div class="display">
+                <div id=valor-actual></div>
+                <div id=valor-anterior></div>
+            </div>
+            <button class="col-2" onclick="display.borrarTodo()">C</button>
+            <button onclick="display.borrar()">&larr;</button>
+            <button class="operador" value="dividir">%</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="multiplicar">x</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="sumar">+</button>
+            <button class="numero col-2">0</button>
+            <button class="numero">.</button>
+            <button class="operador" value="igual">=</button>
+            
+        </div>
+    </div>
+
+    
+    <script src="/Display.js" type="text/javascript"></script>
+    <script src="/Calculadora.js" type="text/javascript"></script>
+    <script src="/main.js" type="text/javascript"></script>
+
+</body>
+</html>
