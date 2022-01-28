@@ -1,6 +1,7 @@
 *{
     margin: 0;
     font-family: fredoka one;
+
 }
 
 
@@ -13,7 +14,7 @@
     align-items: center;
     height: 100vh;
     margin: auto;
-    
+    max-width: 800px;
     
 }
 
